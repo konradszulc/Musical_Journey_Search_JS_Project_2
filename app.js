@@ -6,7 +6,7 @@ Brain of the webpage, enables fetching of API, and elements  on index to then di
 /*-----Global Variables-----*/
 
 //Using a proxy server to hide API key from public, change URL based on environment, localhost for development (teacher can use locally), or Render URL as backend for github pages deployment
-const API_URL = (window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') ? 'http://localhost:3000/api/lastfm' : 'https://musical-journey-search.onrender.com/api/lastfm'; //Render URL
+const API_URL = (window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') ? 'http://localhost:3000/api/lastfm' : 'https://musical-journey-search-js-project-2.onrender.com/api/lastfm'; //Render URL
 
 //checking if API URL is set correctly
 console.log('Using API URL:', API_URL);
