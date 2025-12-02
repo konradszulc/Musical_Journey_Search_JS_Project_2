@@ -36,7 +36,7 @@ The Key Features are:
 
 ### Live Links
 
-- GitHub Pages (for frontend): 
+- GitHub Pages (for frontend): https://konradszulc.github.io/Musical_Journey_Search_JS_Project_2/
 - Render Backend (for API proxy): https://musical-journey-search-js-project-2.onrender.com/api/lastfm
 
 NOTE: Render deployment is on free version thus will sleep due to inactivity until called upon, before testing give some time for backend to boot up. After it is up and running, requests will be faster.
