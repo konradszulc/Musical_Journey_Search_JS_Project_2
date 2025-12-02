@@ -1,0 +1,12 @@
+# Environement Variables (e.g., API keys)
+.env
+.env.local
+.env.*.local
+
+
+# node_modules
+node_modules/
+
+#OS files
+.DS_Store
+Thumbs.db

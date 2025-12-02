@@ -1,0 +1,69 @@
+<!-- index.html
+Author: Konrad Szulc 
+Date Submitted: Dec 3rd 2025
+Application: Using Last.fm API key to provide webpage to search artists and provide information -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!--Link to Extrenal CSS File for styling-->
+    <title>Musical Journey Search</title>
+
+</head>
+
+<body>
+    <main class="mainBody"> <!--Main content of page to be displayed-->
+
+        <header class="card mainHeader" aria-label="Main Header" aria-live="polite">
+            <h1>Konrad's Musical Journey Search</h1>
+            <p>Use the search bar to discover a wide arrange of artists from the Last.fm API. Once searched, click
+                on an artist, to see their tob albums. Click on an album for info of the artist's albums and the songs
+                within. <br><br> Tip: You can also use Tab to focus and enter to select. <br> Ready to go! Then
+                start searching!</p>
+        </header>
+
+        <!-- Search Section -->
+        <section id="searchSection" class="card">
+            <div class="search-bar">
+                <label for="artistSearch" class="visually-hidden">Artist Search:</label>
+                <input id="artistSearch" type="text" placeholder="Please enter an artist's name" autocomplete="off" />
+                <button id="searchBtn" type="button">Search</button>
+            </div>
+            <!-- Status and Error Messages display -->
+            <p id="statusMsg" class="status" aria-live="polite"></p>
+            <p id="errorMsg" class="error" aria-live="polite"></p>
+
+        </section>
+
+        <!-- Loading Spinner -->
+        <div id="spinner" class="spinner hidden" aria-hidden="true" aria-live="polite">
+            <span class="sr-only">Loading...</span>
+        </div>
+
+        <!-- Artist Search Results -->
+        <section id="artistResults" class="card results" aria-label="Artist Search Results" hidden></section>
+
+        <!-- Artist Info  and Albums -->
+        <section id="artistInfo" class="card artist-info" aria-label="Artist Information" hidden></section>
+
+        <!--Will display albums in a grid style -->
+        <section id="albumGrid" class="card grid" aria-label="Albums" hidden></section>
+
+        <!--Will display album details when an album is clicked-->
+        <section id="albumDetails" class="card album-details" aria-label="Album Details" hidden></section>
+
+        <footer class="card" aria-label="Footer">
+            <p>&copy; 2025 Konrad Szulc. All rights reserved.</p>
+            <p>Data provided by <a href="https://www.last.fm/api" target="_blank">Last.fm API</a></p>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
+    <!--Link to external JS file brains of the entire webpage to fetch API data and fill page-->
+</body>
+
+</html>
