@@ -170,10 +170,15 @@ I am also happy to continue learning about understanding the parseing of JSON, a
 ## Video-Time Stamps
 
 0:00 Introduction
+
 0:30 Structure
+
 1:15 Main Features and Frameworks
+
 1:50 Live Demo
+
 3:00 Showcasing intersting part of code (Using Async function and fetch)
+
 5:11 Conclusion (Challenges and keytake aways)
 
 Video Link not provided in GitHub Repo, was submitted into Canvas Comments, use Time stamps here for easier use of watching.
