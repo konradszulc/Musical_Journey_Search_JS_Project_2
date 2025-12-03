@@ -145,19 +145,21 @@ points: 2/2
 
 ### Demo video and Git portfolio (5 points)
 
--Video Structure and Clarity:
+-Video Structure and Clarity: Explains the problem, which API is used, and solution but Video is 1 min extra long at 6 mins and does not have webcam (1pt)
 
--Evidence in Video:
+-Evidence in Video: Shows App in use Live, the flow of the app and outcomes, and shows interesting aspect of Code (1pt)
 
 -Git Portfolio Quality: Repo is clean, .gitignore is in place, no secrets or API's, no commits story due to working locally (.5pts)
 
 -Links and Access: Links fully operational and Given to proper areas (1pt)
 
-points:
+points: 3.5/5
 
 ### Total Points
 
-Points: /35
+Points: 30/35
+
+I am quite happy with this total points, because I am quite proud of the work I put in, to create and understand some interesting new concepts, and develop an app with some practically and interesting usage. 
 
 ## Reflection
 
@@ -166,3 +168,12 @@ As the course comes to an end, this project put to the test various amounts of k
 I am also happy to continue learning about understanding the parseing of JSON, and how data is structured in such a way to easily be pulled and read for purposes such as this app. Implementing constant validation checks to make sure the user or even the developer what is currently  happening in the system, such as a spinner to indicate the webpage is not stuck but loading, or status and error messages to display exactly what is happening. These are all important concepts because it makes debugging processes easier when also using console.log to see what info is being pulled or general testing of the app. There is still alot to learn especially, having some struggles on the backend side, but nonetheless as we heavily focused on the frontend my progress has greatly increased, and I am overjoyed by the structured content of this course to be able to develop, debugg and deploy webpages such as these.
 
 ## Video-Time Stamps
+
+0:00 Introduction
+0:30 Structure
+1:15 Main Features and Frameworks
+1:50 Live Demo
+3:00 Showcasing intersting part of code (Using Async function and fetch)
+5:11 Conclusion (Challenges and keytake aways)
+
+Video Link not provided in GitHub Repo, was submitted into Canvas Comments, use Time stamps here for easier use of watching.
