@@ -45,8 +45,8 @@ The Key Features are:
 
 1. Clone the repository:
     ```bash
-    git clone
-    cd 
+    git clone https://github.com/konradszulc/Musical_Journey_Search_JS_Project_2.git
+    cd Musical_Journey_Search_JS_Project_2
     ```
 
 2. Go into Code editor
@@ -90,8 +90,11 @@ Site With Data
 ### Core functionality and usability (10 points)
 
 -Primary User Stories: no blockers, search, repeat search, and recieve results all clear (4pts)
+
 -Result Quality: Specifically brings up ALbums and info related to selected Artist name (3 pts)
+
 -Error and Edge Cases: Validation for empty name, displays error messages if fetch does not work, has loading spinner to show state during fetch commands, though noticed some hiccups in speed (1.5pts)
+
 -Retry and Navigation: Can search as much as needed without needing to refresh, no broken links (1pt)
 
 points: 9.5/10
@@ -99,8 +102,11 @@ points: 9.5/10
 ### API integration and data handling (8 points)
 
 -Request Construction: Uses correct API endpoints and Query parameters (methods) as shown on Last.fm website, API is hidden in backend proxy (3pts)
+
 -Parsing and Selection: Grabs most needed info like artist name, and album however, maybe grabs too many results such as artist name with collaborations (1pt)
+
 -Error Handling for API: checks for null values, checks if values are array or single object, shows error in any case of no data fetched (2pts)
+
 -Polite Usage: only fetches on needed functions (1pt)
 
 points: 7/8
@@ -108,8 +114,11 @@ points: 7/8
 ### Front end layout and interaction (5 points)
 
 -Layout and Grouping: Search, results, and info clearly seperated, Page easy to scan, may be to minimal for some (1.5pt)
+
 -Interaction: Shows results seamlessly, shows loading indicator for user engagement (1pt)
+
 -Responsiveness: Clean layout, no broken overflow, works on lower size screens and still usable (1pt)
+
 -Visual Consistency: CSS styles are consistent throughout whole app (1pt)
 
 points: 4.5/5
@@ -117,8 +126,11 @@ points: 4.5/5
 ### Code quality and architecture (5 points)
 
 -Structure: Files organized and shown in readme, barely any folders, may have been useful (1pt)
+
 -Naming and Comments: Meaningful names to display intent, lots of comments could be too much depenging on person perspective (.5pt)
+
 -Logic and Flow: flow is self explantory similar structure to display, only nessecary functions (1pt)
+
 -Basic Defensive Coding: has input validation for API calls, Try-catch blocks for error catching. (1pt)
 
 points: 3.5/5
@@ -126,6 +138,7 @@ points: 3.5/5
 ### Documentation (2 points)
 
 -README essentails: Has feature list, all other essentials, API mention and usage details (1pt)
+
 -Clarity and Reflection Text: Provided insightful reflection of lessons learned, limitations and future (1pt)
 
 points: 2/2
@@ -133,8 +146,11 @@ points: 2/2
 ### Demo video and Git portfolio (5 points)
 
 -Video Structure and Clarity:
+
 -Evidence in Video:
+
 -Git Portfolio Quality: Repo is clean, .gitignore is in place, no secrets or API's, no commits story due to working locally (.5pts)
+
 -Links and Access: Links fully operational and Given to proper areas (1pt)
 
 points:
