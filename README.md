@@ -28,8 +28,8 @@ The Key Features are:
 ├── .gitignore              # Excludes node_modules and .env from version control
 └──  images/                # Placeholder images for missing album art and screenshots
         ├── place_holder_album_img.jpg
-        ├──
-        └── 
+        ├── page_without_data.jpg
+        └── page_with_data.jpg
 ```
 
 ## How Can I run It?
@@ -39,7 +39,7 @@ The Key Features are:
 - GitHub Pages (for frontend): https://konradszulc.github.io/Musical_Journey_Search_JS_Project_2/
 - Render Backend (for API proxy): https://musical-journey-search-js-project-2.onrender.com/api/lastfm
 
-NOTE: Render deployment is on free version thus will sleep due to inactivity until called upon, before testing give some time for backend to boot up. After it is up and running, requests will be faster.
+**IMPORTANT NOTE:** Render deployment is on free version thus will sleep due to inactivity until called upon, before testing give some time for backend to boot up, by going directly to render site link posted above. You can also send a search artist on GitHub pages, which should wake the server up as well in some time, if not after 90 seconds will show timeout, press search again.  After it is up and running, requests will be faster.
 
 ### Local Testing (how to deploy)
 
@@ -79,6 +79,11 @@ NOTE: Render deployment is on free version thus will sleep due to inactivity unt
 
 ## Screenshots
 
+Site Empty Data
+![Screenshot of empty data site](images/page_without_data.jpg)
+
+Site With Data
+![Screenshot of site with data](images/page_with_data.jpg)
 
 ## Self Assesment
 
@@ -140,7 +145,7 @@ Points: /35
 
 ## Reflection
 
-As the course comes to an end, this project put to the test various amounts of knowledge that we have had to demonstrate throughout the course.However, more prominently the new skill of using AJAX to dynamically and asynchronously update the page by fetching data from an API was quite the fun challenge. The ability to smoothly update a page with a wide amount of information because of an API was very satisfying. As well, I found that our previous project 1 greatly helped to understand and implement the general structure. In my case with developing option 2, I early on understood, that first I would want to search, which then would need to display the search results, next would be displaying the albums of the artist to fulfill the requirements of the task. However I noticed that Last.fm API provides various different information to the artists that by display could add some additional personality to my webpage. This being listener numbers, play counts, text descriptions of albums and the artist, and of course track list. Thus, I included an aditional section that is created when searching the artist to give a description if it is available. As well, the ability to click on one of the albums display to then show the track list on that album if available. This also gave me insight on the many skills I am skill lacking however, as the API can provide so much more information, yet I could not use it all, for example the time amounts of the tracks or the issue I had with some pictures not being found for albums. While it can be disheartening at first to struggle understanding or trying to implement a feature, by constantly trying and eventually understanding the concepts skills will improve, and provides excitement for future projects or even to improve on this one in the future. In addition, while I find the accessibility and visual clarity good, there can be improvements upon reflection such as additonal headers to make more clear what each section is about on quick glance. Though I am happy to have the sections hidden until a search is made. CSS is definetly a skill I have to continue improving, as I lack the eye for it, but project 1 helped me to develop a similar style for this project with using cards and features like overflow to provide scrolling, instead of one long page.
+As the course comes to an end, this project put to the test various amounts of knowledge that we have had to demonstrate throughout the course.However, more prominently the new skill of using AJAX to dynamically and asynchronously update the page by fetching data from an API was quite the fun challenge. The ability to smoothly update a page with a wide amount of information because of an API was very satisfying. As well, I found that our previous project 1 greatly helped to understand and implement the general structure. In my case with developing option 2, I early on understood, that first I would want to search, which then would need to display the search results, next would be displaying the albums of the artist to fulfill the requirements of the task. However I noticed that Last.fm API provides various different information to the artists that by display could add some additional personality to my webpage. This being listener numbers, play counts, text descriptions of albums and the artist, and of course track list. Thus, I included an aditional section that is created when searching the artist to give a description if it is available. As well, the ability to click on one of the albums display to then show the track list on that album if available. This also gave me insight on the many skills I am skill lacking however, as the API can provide so much more information, yet I could not use it all, for example the time amounts of the tracks or the issue I had with some pictures not being found for albums, thus would produce an error in the log, because it wont get the picture from the server, though the album may show alt text or placeholder image to not tarnish the user experience. While it can be disheartening at first to struggle understanding or trying to implement a feature, by constantly trying and eventually understanding the concepts skills will improve, and provides excitement for future projects or even to improve on this one in the future. In addition, while I find the accessibility and visual clarity good, there can be improvements upon reflection such as additonal headers to make more clear what each section is about on quick glance. Though I am happy to have the sections hidden until a search is made. CSS is definetly a skill I have to continue improving, as I lack the eye for it, but project 1 helped me to develop a similar style for this project with using cards and features like overflow to provide scrolling, instead of one long page.
 
 I am also happy to continue learning about understanding the parseing of JSON, and how data is structured in such a way to easily be pulled and read for purposes such as this app. Implementing constant validation checks to make sure the user or even the developer what is currently  happening in the system, such as a spinner to indicate the webpage is not stuck but loading, or status and error messages to display exactly what is happening. These are all important concepts because it makes debugging processes easier when also using console.log to see what info is being pulled or general testing of the app. There is still alot to learn especially, having some struggles on the backend side, but nonetheless as we heavily focused on the frontend my progress has greatly increased, and I am overjoyed by the structured content of this course to be able to develop, debugg and deploy webpages such as these.
 

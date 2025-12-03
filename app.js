@@ -8,7 +8,7 @@ Brain of the webpage, enables fetching of API, and elements  on index to then di
 //Using a proxy server to hide API key from public, change URL based on environment, localhost for development (teacher can use locally), or Render URL as backend for github pages deployment
 const API_URL = (window.location.protocol === 'file:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') ? 'http://localhost:3000/api/lastfm' : 'https://musical-journey-search-js-project-2.onrender.com/api/lastfm'; //Render URL
 
-//checking if API URL is set correctly
+//checking if API URL is set correctly, and shows which environment is being used
 console.log('Using API URL:', API_URL);
 //Last.fm API key is now hidden in the backend server, so we don't expose it here
 
@@ -35,10 +35,23 @@ function showSpinner() {
     // Will disable controls while loading
     searchBtn.disabled = true;
     artistSearch.disabled = true;
+
+    //Setting timer to hide spinner after 90 seconds in case of network issues to then allow user to try again
+    window.spinnerTimeout = setTimeout(() => {
+        hideSpinner();
+        setError('Request timed out due to Server wake up. Please try again by clicking the search button.');
+    }, 90000);
 };
 
 //Function to hide loading spinner once API response is received
 function hideSpinner() {
+    
+    //Clear timeout if spinner is hidden before timeout occurs
+    if (window.spinnerTimeout) {
+        clearTimeout(window.spinnerTimeout);
+        window.spinnerTimeout = null;
+    }
+
     if (!spinner) return;
     //hide spinner
     spinner.classList.add('hidden');
@@ -83,12 +96,6 @@ async function searchArtist(artistName) {
     try {
         //Fetch artist search results from API, using backend API proxy 
         const dataResponse = await fetch(API_URL + '?method=artist.search&artist=' + encodeURIComponent(artistName));
-
-        //log URL being fetched for debugging
-        console.log('Fetching from: ', API_URL + '?method=artist.search&artist=' + encodeURIComponent(artistName));
-
-        //log response to verify data received
-        console.log('Response:', dataResponse);
 
         //Check if response is ok, if not throw error
         if (!dataResponse.ok) throw new Error('Returned with status ' + dataResponse.status);
